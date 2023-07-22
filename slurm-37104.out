@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/bin/torchrun", line 5, in <module>
+    from torch.distributed.run import main
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/__init__.py", line 218, in <module>
+    from torch._C import *  # noqa: F403
+ImportError: /home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so: symbol cudaGraphRetainUserObject version libcudart.so.11.0 not defined in file libcudart.so.11.0 with link time reference
+/var/spool/slurmd/job37104/slurm_script: line 41: ß: command not found

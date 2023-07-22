@@ -1,0 +1,87 @@
+
+===================================BUG REPORT===================================
+
+===================================BUG REPORT===================================Welcome to bitsandbytes. For bug reports, please submit your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+
+Welcome to bitsandbytes. For bug reports, please submit your error trace to: https://github.com/TimDettmers/bitsandbytes/issues================================================================================
+
+================================================================================
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/anaconda/2021.11 did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/anaconda/2021.11 did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib:/home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib:/home/bingxing2/apps/compilers/gcc/12.2.0/libexec did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib:/home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib:/home/bingxing2/apps/compilers/gcc/12.2.0/libexec did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&as|compilers/default&as|compilers/latest&as|compilers/gcc/default&as|compilers/gcc/latest')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&as|compilers/default&as|compilers/latest&as|compilers/gcc/default&as|compilers/gcc/latest')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&compilers/gcc'), PosixPath('cudnn/8.6.0.163_cuda11.x&cudnn')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&compilers/gcc'), PosixPath('cudnn/8.6.0.163_cuda11.x&cudnn')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/vscode-git-7e66f8e777.sock')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/vscode-git-7e66f8e777.sock')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0'), PosixPath('cudnn/8.6.0.163_cuda11.x')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('cudnn/8.6.0.163_cuda11.x'), PosixPath('compilers/gcc/12.2.0')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('module use --append /home/bingxing2/apps/tools/modules/modulefiles')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('module use --append /home/bingxing2/apps/tools/modules/modulefiles')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/vscode-ipc-8f4ea817-a60e-4ee8-bbb5-96f7267aa430.sock')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/vscode-ipc-8f4ea817-a60e-4ee8-bbb5-96f7267aa430.sock')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('() {  eval "$(/usr/bin/tclsh \'/home/bingxing2/apps/tools/modules/libexec/modulecmd.tcl\' bash "$@")";\n _mlstatus=$?;\n return $_mlstatus\n}')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('() {  eval "$(/usr/bin/tclsh \'/home/bingxing2/apps/tools/modules/libexec/modulecmd.tcl\' bash "$@")";\n _mlstatus=$?;\n return $_mlstatus\n}')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/torchelastic_db65dcfp/none_ng5ogrmi/attempt_0/1/error.json')}
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching /usr/local/cuda/lib64...:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/torchelastic_db65dcfp/none_ng5ogrmi/attempt_0/0/error.json')}
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching /usr/local/cuda/lib64...
+
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.soCUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+
+CUDA SETUP: Detected CUDA version 116CUDA SETUP: Detected CUDA version 116
+
+CUDA SETUP: Loading binary /home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda116.so...CUDA SETUP: Loading binary /home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda116.so...
+
+Training Alpaca-LoRA model with params:
+base_model: /home/bingxing2/home/scx6503/yx/chinese-alpaca-plus-13b-hf
+data_path: /home/bingxing2/home/scx6503/yx/LaWGPT/data/news_info_news30w.json
+output_dir: ./outputs/chinese-llama-plus-13b-train_info_and_report_15wnews
+batch_size: 48
+micro_batch_size: 1
+num_epochs: 1
+learning_rate: 0.0001
+cutoff_len: 600
+val_set_size: 0
+lora_r: 8
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules: ['q_proj', 'v_proj', 'k_proj', 'o_proj', 'gate_proj', 'down_proj', 'up_proj']
+train_on_inputs: True
+add_eos_token: True
+group_by_length: True
+wandb_project: 
+wandb_run_name: 
+wandb_watch: 
+wandb_log_model: 
+resume_from_checkpoint: False
+prompt template: alpaca
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:05<00:10,  5.34s/it]Loading checkpoint shards:  33%|███▎      | 1/3 [00:05<00:11,  5.52s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:12<00:06,  6.19s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:12<00:06,  6.64s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.61s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:14<00:00,  4.95s/it]
+pre-trained model's BOS EOS and PAD token id: 1 2 49953  => It should be 1,2,none
+Loading checkpoint shards: 100%|██████████| 3/3 [00:15<00:00,  4.79s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:15<00:00,  5.18s/it]
+pre-trained model's BOS EOS and PAD token id: 1 2 49953  => It should be 1,2,none
+slurmstepd: error: *** JOB 36881 ON paraai-n32-h-01-agent-3 CANCELLED AT 2023-07-14T01:10:17 ***

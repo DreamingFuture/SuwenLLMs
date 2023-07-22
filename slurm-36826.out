@@ -1,0 +1,221 @@
+
+===================================BUG REPORT===================================
+
+
+===================================BUG REPORT===================================Welcome to bitsandbytes. For bug reports, please submit your error trace to: https://github.com/TimDettmers/bitsandbytes/issues===================================BUG REPORT===================================
+
+
+Welcome to bitsandbytes. For bug reports, please submit your error trace to: https://github.com/TimDettmers/bitsandbytes/issues================================================================================Welcome to bitsandbytes. For bug reports, please submit your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+
+
+================================================================================================================================================================
+
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/anaconda/2021.11 did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/anaconda/2021.11 did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/anaconda/2021.11 did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib:/home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib:/home/bingxing2/apps/compilers/gcc/12.2.0/libexec did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib:/home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib:/home/bingxing2/apps/compilers/gcc/12.2.0/libexec did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib:/home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib:/home/bingxing2/apps/compilers/gcc/12.2.0/libexec did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&as|compilers/default&as|compilers/latest&as|compilers/gcc/default&as|compilers/gcc/latest')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&as|compilers/default&as|compilers/latest&as|compilers/gcc/default&as|compilers/gcc/latest')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&as|compilers/default&as|compilers/latest&as|compilers/gcc/default&as|compilers/gcc/latest')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&compilers/gcc'), PosixPath('cudnn/8.6.0.163_cuda11.x&cudnn')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&compilers/gcc'), PosixPath('cudnn/8.6.0.163_cuda11.x&cudnn')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('cudnn/8.6.0.163_cuda11.x&cudnn'), PosixPath('compilers/gcc/12.2.0&compilers/gcc')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/vscode-git-7e66f8e777.sock')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/vscode-git-7e66f8e777.sock')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/vscode-git-7e66f8e777.sock')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('cudnn/8.6.0.163_cuda11.x'), PosixPath('compilers/gcc/12.2.0')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0'), PosixPath('cudnn/8.6.0.163_cuda11.x')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('cudnn/8.6.0.163_cuda11.x'), PosixPath('compilers/gcc/12.2.0')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('module use --append /home/bingxing2/apps/tools/modules/modulefiles')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('module use --append /home/bingxing2/apps/tools/modules/modulefiles')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('module use --append /home/bingxing2/apps/tools/modules/modulefiles')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/vscode-ipc-8f4ea817-a60e-4ee8-bbb5-96f7267aa430.sock')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/vscode-ipc-8f4ea817-a60e-4ee8-bbb5-96f7267aa430.sock')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/vscode-ipc-8f4ea817-a60e-4ee8-bbb5-96f7267aa430.sock')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('() {  eval "$(/usr/bin/tclsh \'/home/bingxing2/apps/tools/modules/libexec/modulecmd.tcl\' bash "$@")";\n _mlstatus=$?;\n return $_mlstatus\n}')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('() {  eval "$(/usr/bin/tclsh \'/home/bingxing2/apps/tools/modules/libexec/modulecmd.tcl\' bash "$@")";\n _mlstatus=$?;\n return $_mlstatus\n}')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('() {  eval "$(/usr/bin/tclsh \'/home/bingxing2/apps/tools/modules/libexec/modulecmd.tcl\' bash "$@")";\n _mlstatus=$?;\n return $_mlstatus\n}')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/torchelastic_p78nt8t6/none_q_of81sc/attempt_0/0/error.json')}
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching /usr/local/cuda/lib64...:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/torchelastic_p78nt8t6/none_q_of81sc/attempt_0/2/error.json')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/torchelastic_p78nt8t6/none_q_of81sc/attempt_0/1/error.json')}
+  warn(msg)
+
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching /usr/local/cuda/lib64...CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.soCUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching /usr/local/cuda/lib64...
+
+
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.soCUDA SETUP: Highest compute capability among GPUs detected: 8.0CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+
+
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0CUDA SETUP: Detected CUDA version 116CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+
+
+CUDA SETUP: Detected CUDA version 116CUDA SETUP: Loading binary /home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda116.so...CUDA SETUP: Detected CUDA version 116
+
+
+CUDA SETUP: Loading binary /home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda116.so...CUDA SETUP: Loading binary /home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda116.so...
+
+Training Alpaca-LoRA model with params:
+base_model: /home/bingxing2/home/scx6503/yx/chinese-alpaca-plus-13b-hf
+data_path: /home/bingxing2/home/scx6503/yx/LaWGPT/data/news_info_news30w.json
+output_dir: ./outputs/chinese-llama-plus-13b-train_info_and_report_15wnews
+batch_size: 48
+micro_batch_size: 1
+num_epochs: 1
+learning_rate: 0.0001
+cutoff_len: 600
+val_set_size: 0
+lora_r: 8
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules: ['q_proj', 'v_proj', 'k_proj', 'o_proj', 'gate_proj', 'down_proj', 'up_proj']
+train_on_inputs: True
+add_eos_token: True
+group_by_length: True
+wandb_project: 
+wandb_run_name: 
+wandb_watch: 
+wandb_log_model: 
+resume_from_checkpoint: False
+prompt template: alpaca
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 259, in <module>
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 259, in <module>
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 259, in <module>
+    fire.Fire(train)
+      File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+fire.Fire(train)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+    fire.Fire(train)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+            component_trace = _Fire(component, args, parsed_flag_args, context, name)component_trace = _Fire(component, args, parsed_flag_args, context, name)component_trace = _Fire(component, args, parsed_flag_args, context, name)
+
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+            component, remaining_args = _CallAndUpdateTrace(component, remaining_args = _CallAndUpdateTrace(component, remaining_args = _CallAndUpdateTrace(
+
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+        component = fn(*varargs, **kwargs)    component = fn(*varargs, **kwargs)
+component = fn(*varargs, **kwargs)
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 108, in train
+
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 108, in train
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 108, in train
+    model = LlamaForCausalLM.from_pretrained(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/modeling_utils.py", line 2259, in from_pretrained
+        model = LlamaForCausalLM.from_pretrained(model = LlamaForCausalLM.from_pretrained(
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/modeling_utils.py", line 2259, in from_pretrained
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/modeling_utils.py", line 2259, in from_pretrained
+            config, model_kwargs = cls.config_class.from_pretrained(config, model_kwargs = cls.config_class.from_pretrained(config, model_kwargs = cls.config_class.from_pretrained(
+
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/configuration_utils.py", line 547, in from_pretrained
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/configuration_utils.py", line 547, in from_pretrained
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/configuration_utils.py", line 547, in from_pretrained
+            config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/configuration_utils.py", line 574, in get_config_dict
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/configuration_utils.py", line 574, in get_config_dict
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/configuration_utils.py", line 574, in get_config_dict
+        config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/utils/hub.py", line 388, in cached_file
+    resolved_config_file = cached_file(    
+resolved_config_file = cached_file(  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/utils/hub.py", line 388, in cached_file
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/utils/hub.py", line 388, in cached_file
+            raise EnvironmentError(raise EnvironmentError(raise EnvironmentError(
+
+
+OSErrorOSErrorOSError: : : /home/bingxing2/home/scx6503/yx/chinese-alpaca-plus-13b-hf does not appear to have a file named config.json. Checkout 'https://huggingface.co//home/bingxing2/home/scx6503/yx/chinese-alpaca-plus-13b-hf/None' for available files./home/bingxing2/home/scx6503/yx/chinese-alpaca-plus-13b-hf does not appear to have a file named config.json. Checkout 'https://huggingface.co//home/bingxing2/home/scx6503/yx/chinese-alpaca-plus-13b-hf/None' for available files./home/bingxing2/home/scx6503/yx/chinese-alpaca-plus-13b-hf does not appear to have a file named config.json. Checkout 'https://huggingface.co//home/bingxing2/home/scx6503/yx/chinese-alpaca-plus-13b-hf/None' for available files.
+
+
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 4030290) of binary: /home/bingxing2/home/scx6503/.conda/envs/py39/bin/python
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/distributed/run.py", line 762, in main
+    run(args)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/distributed/run.py", line 753, in run
+    elastic_launch(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 246, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_clm.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2023-07-13_22:47:24
+  host      : paraai-n32-h-01-agent-40.paraai-n32-h-01.com
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 4030291)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2023-07-13_22:47:24
+  host      : paraai-n32-h-01-agent-40.paraai-n32-h-01.com
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 4030292)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-07-13_22:47:24
+  host      : paraai-n32-h-01-agent-40.paraai-n32-h-01.com
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 4030290)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+/var/spool/slurmd/job36826/slurm_script: line 39: ß: command not found

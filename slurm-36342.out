@@ -1,0 +1,311 @@
+Training Alpaca-LoRA model with params:
+base_model: /home/bingxing2/home/scx6503/yx/Linly-Chinese-LLaMA-7B
+data_path: /home/bingxing2/home/scx6503/yx/LaWGPT/data/Sample.json
+output_dir: ./outputs/train-clm-llama-7B-2
+batch_size: 32
+micro_batch_size: 2
+num_epochs: 800
+learning_rate: 0.0003
+cutoff_len: 900
+val_set_size: 0
+lora_r: 8
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules: ['q_proj', 'v_proj', 'k_proj', 'o_proj', 'gate_proj', 'down_proj', 'up_proj']
+train_on_inputs: True
+add_eos_token: True
+group_by_length: True
+wandb_project: 
+wandb_run_name: 
+wandb_watch: 
+wandb_log_model: 
+resume_from_checkpoint: False
+prompt template: alpaca
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.61s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.29s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.31s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.80s/it]
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.36s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.95s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.90s/it]pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+Loading checkpoint shards:  50%|█████     | 1/2 [00:10<00:10, 10.19s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.83s/it]
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.20s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.95s/it]
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+Found cached dataset json (/home/bingxing2/home/scx6503/.cache/huggingface/datasets/json/default-889e96a2ecc785f2/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 85.94it/s]
+trainable params: 19988480 || all params: 6758404096 || trainable%: 0.2957573965106688
+Map:   0%|          | 0/1057 [00:00<?, ? examples/s]Map:   3%|▎         | 31/1057 [00:00<00:03, 289.93 examples/s]Map:   6%|▌         | 62/1057 [00:00<00:03, 294.78 examples/s]Map:   9%|▉         | 93/1057 [00:00<00:03, 300.00 examples/s]Map:  12%|█▏        | 124/1057 [00:00<00:03, 300.96 examples/s]Map:  15%|█▍        | 156/1057 [00:00<00:02, 303.64 examples/s]Map:  18%|█▊        | 187/1057 [00:00<00:02, 304.52 examples/s]Found cached dataset json (/home/bingxing2/home/scx6503/.cache/huggingface/datasets/json/default-889e96a2ecc785f2/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 637.34it/s]
+trainable params: 19988480 || all params: 6758404096 || trainable%: 0.2957573965106688
+Map:  22%|██▏       | 234/1057 [00:00<00:02, 302.94 examples/s]Map:   0%|          | 0/1057 [00:00<?, ? examples/s]Map:  25%|██▌       | 265/1057 [00:00<00:02, 301.56 examples/s]Map:   3%|▎         | 31/1057 [00:00<00:03, 300.05 examples/s]Map:  28%|██▊       | 296/1057 [00:00<00:02, 301.44 examples/s]Map:   6%|▌         | 63/1057 [00:00<00:03, 304.70 examples/s]Map:  31%|███       | 327/1057 [00:01<00:02, 300.28 examples/s]Map:   9%|▉         | 94/1057 [00:00<00:03, 302.33 examples/s]Map:  12%|█▏        | 126/1057 [00:00<00:03, 304.03 examples/s]Map:  35%|███▌      | 371/1057 [00:01<00:02, 295.44 examples/s]Map:  15%|█▍        | 158/1057 [00:00<00:02, 305.54 examples/s]Map:  38%|███▊      | 403/1057 [00:01<00:02, 298.34 examples/s]Map:  18%|█▊        | 190/1057 [00:00<00:02, 305.59 examples/s]Map:  41%|████      | 434/1057 [00:01<00:02, 298.64 examples/s]Map:  44%|████▍     | 465/1057 [00:01<00:01, 298.97 examples/s]Map:  22%|██▏       | 236/1057 [00:00<00:02, 301.35 examples/s]Map:  47%|████▋     | 496/1057 [00:01<00:01, 297.16 examples/s]Map:  25%|██▌       | 268/1057 [00:00<00:02, 302.16 examples/s]Map:  50%|████▉     | 528/1057 [00:01<00:01, 299.93 examples/s]Map:  28%|██▊       | 299/1057 [00:00<00:02, 301.71 examples/s]Map:  53%|█████▎    | 560/1057 [00:01<00:01, 300.67 examples/s]Map:  31%|███▏      | 331/1057 [00:01<00:02, 303.28 examples/s]Map:  56%|█████▌    | 591/1057 [00:01<00:01, 300.34 examples/s]Map:  36%|███▌      | 376/1057 [00:01<00:02, 298.91 examples/s]Map:  59%|█████▉    | 623/1057 [00:02<00:01, 304.02 examples/s]Map:  40%|███▉      | 421/1057 [00:01<00:02, 297.99 examples/s]Map:  63%|██████▎   | 668/1057 [00:02<00:01, 299.16 examples/s]Map:  43%|████▎     | 453/1057 [00:01<00:02, 301.32 examples/s]Map:  66%|██████▌   | 700/1057 [00:02<00:01, 301.58 examples/s]Map:  46%|████▌     | 485/1057 [00:01<00:01, 303.62 examples/s]Found cached dataset json (/home/bingxing2/home/scx6503/.cache/huggingface/datasets/json/default-889e96a2ecc785f2/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 522.00it/s]
+trainable params: 19988480 || all params: 6758404096 || trainable%: 0.2957573965106688
+Map:  69%|██████▉   | 732/1057 [00:02<00:01, 302.29 examples/s]Map:   0%|          | 0/1057 [00:00<?, ? examples/s]Found cached dataset json (/home/bingxing2/home/scx6503/.cache/huggingface/datasets/json/default-889e96a2ecc785f2/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 577.89it/s]
+trainable params: 19988480 || all params: 6758404096 || trainable%: 0.2957573965106688
+Map:   0%|          | 0/1057 [00:00<?, ? examples/s]Map:  49%|████▉     | 516/1057 [00:01<00:01, 300.11 examples/s]Map:  72%|███████▏  | 763/1057 [00:02<00:00, 299.90 examples/s]Map:   3%|▎         | 29/1057 [00:00<00:03, 277.34 examples/s]Map:   3%|▎         | 30/1057 [00:00<00:03, 290.96 examples/s]Map:  52%|█████▏    | 548/1057 [00:01<00:01, 302.15 examples/s]Map:  75%|███████▌  | 794/1057 [00:02<00:00, 300.55 examples/s]Map:   6%|▌         | 61/1057 [00:00<00:03, 292.49 examples/s]Map:   6%|▌         | 61/1057 [00:00<00:03, 296.56 examples/s]Map:  55%|█████▍    | 579/1057 [00:01<00:01, 302.14 examples/s]Map:  78%|███████▊  | 825/1057 [00:02<00:00, 300.82 examples/s]Map:   9%|▊         | 91/1057 [00:00<00:03, 289.66 examples/s]Map:   9%|▊         | 92/1057 [00:00<00:03, 299.06 examples/s]Map:  58%|█████▊    | 610/1057 [00:02<00:01, 302.93 examples/s]Map:  12%|█▏        | 123/1057 [00:00<00:03, 296.70 examples/s]Map:  82%|████████▏ | 870/1057 [00:02<00:00, 297.37 examples/s]Map:  12%|█▏        | 124/1057 [00:00<00:03, 303.71 examples/s]Map:  61%|██████    | 641/1057 [00:02<00:01, 301.21 examples/s]Map:  15%|█▍        | 155/1057 [00:00<00:02, 300.91 examples/s]Map:  85%|████████▌ | 900/1057 [00:03<00:00, 294.03 examples/s]Map:  15%|█▍        | 155/1057 [00:00<00:02, 301.93 examples/s]Map:  64%|██████▎   | 673/1057 [00:02<00:01, 303.84 examples/s]Map:  18%|█▊        | 186/1057 [00:00<00:02, 300.00 examples/s]Map:  88%|████████▊ | 931/1057 [00:03<00:00, 295.56 examples/s]Map:  18%|█▊        | 187/1057 [00:00<00:02, 303.09 examples/s]Map:  67%|██████▋   | 705/1057 [00:02<00:01, 305.94 examples/s]Map:  91%|█████████ | 961/1057 [00:03<00:00, 296.27 examples/s]Map:  70%|██████▉   | 737/1057 [00:02<00:01, 305.46 examples/s]Map:  22%|██▏       | 232/1057 [00:00<00:02, 294.05 examples/s]Map:  22%|██▏       | 232/1057 [00:00<00:02, 298.08 examples/s]Map:  94%|█████████▍| 993/1057 [00:03<00:00, 298.62 examples/s]Map:  25%|██▍       | 262/1057 [00:00<00:02, 293.47 examples/s]Map:  25%|██▍       | 263/1057 [00:00<00:02, 298.91 examples/s]Map:  74%|███████▍  | 783/1057 [00:02<00:00, 301.76 examples/s]Map:  28%|██▊       | 292/1057 [00:00<00:02, 294.93 examples/s]Map:  28%|██▊       | 293/1057 [00:00<00:02, 296.96 examples/s]Map:  78%|███████▊  | 829/1057 [00:02<00:00, 300.14 examples/s]Map:  31%|███       | 324/1057 [00:01<00:02, 298.05 examples/s]Map:  31%|███       | 325/1057 [00:01<00:02, 299.61 examples/s]Map:  81%|████████▏ | 860/1057 [00:02<00:00, 299.65 examples/s]Map:  98%|█████████▊| 1032/1057 [00:03<00:00, 181.67 examples/s]Map:  35%|███▍      | 369/1057 [00:01<00:02, 295.02 examples/s]Map:  35%|███▌      | 370/1057 [00:01<00:02, 296.80 examples/s]Map:  84%|████████▍ | 892/1057 [00:02<00:00, 301.11 examples/s]Map:  38%|███▊      | 400/1057 [00:01<00:02, 296.70 examples/s]Map:  38%|███▊      | 402/1057 [00:01<00:02, 299.09 examples/s]Map: 100%|██████████| 1057/1057 [00:03<00:00, 176.14 examples/s]                                                                Map:  89%|████████▊ | 938/1057 [00:03<00:00, 301.46 examples/s]Map:  41%|████      | 433/1057 [00:01<00:02, 298.86 examples/s]Map:  42%|████▏     | 444/1057 [00:01<00:02, 294.32 examples/s]Map:  92%|█████████▏| 969/1057 [00:03<00:00, 303.12 examples/s]Map:  44%|████▍     | 464/1057 [00:01<00:01, 298.68 examples/s]Map:  45%|████▌     | 476/1057 [00:01<00:01, 296.41 examples/s]Map:  48%|████▊     | 507/1057 [00:01<00:01, 295.68 examples/s]Map:  48%|████▊     | 508/1057 [00:01<00:01, 294.51 examples/s]Map:  51%|█████     | 538/1057 [00:01<00:01, 296.66 examples/s]Map:  51%|█████     | 538/1057 [00:01<00:01, 292.81 examples/s]Map:  95%|█████████▍| 1000/1057 [00:03<00:00, 180.13 examples/s]Map:  54%|█████▍    | 570/1057 [00:01<00:01, 299.88 examples/s]Map:  54%|█████▎    | 568/1057 [00:01<00:01, 293.20 examples/s]Map:  98%|█████████▊| 1032/1057 [00:03<00:00, 204.38 examples/s]Map:  57%|█████▋    | 599/1057 [00:02<00:01, 294.32 examples/s]Map:  58%|█████▊    | 615/1057 [00:02<00:01, 297.01 examples/s]                                                                Map:  61%|██████    | 643/1057 [00:02<00:01, 292.64 examples/s]Map:  62%|██████▏   | 660/1057 [00:02<00:01, 293.42 examples/s]Map:  64%|██████▎   | 673/1057 [00:02<00:01, 293.81 examples/s]Map:  65%|██████▌   | 692/1057 [00:02<00:01, 295.84 examples/s]Map:  67%|██████▋   | 704/1057 [00:02<00:01, 294.49 examples/s]Map:  68%|██████▊   | 723/1057 [00:02<00:01, 297.74 examples/s]Map:  69%|██████▉   | 734/1057 [00:02<00:01, 294.08 examples/s]Map:  71%|███████   | 753/1057 [00:02<00:01, 297.71 examples/s]Map:  72%|███████▏  | 765/1057 [00:02<00:00, 294.11 examples/s]Map:  74%|███████▍  | 783/1057 [00:02<00:00, 294.67 examples/s]Map:  75%|███████▌  | 795/1057 [00:02<00:00, 292.48 examples/s]Map:  77%|███████▋  | 813/1057 [00:02<00:00, 293.59 examples/s]Map:  78%|███████▊  | 825/1057 [00:02<00:00, 291.30 examples/s]Map:  80%|███████▉  | 843/1057 [00:02<00:00, 294.34 examples/s]Map:  81%|████████  | 855/1057 [00:02<00:00, 289.86 examples/s]Map:  83%|████████▎ | 873/1057 [00:02<00:00, 294.43 examples/s]Map:  84%|████████▍ | 886/1057 [00:02<00:00, 294.05 examples/s]Map:  85%|████████▌ | 903/1057 [00:03<00:00, 292.37 examples/s]Map:  88%|████████▊ | 934/1057 [00:03<00:00, 294.34 examples/s]Map:  88%|████████▊ | 931/1057 [00:03<00:00, 293.41 examples/s]Map:  91%|█████████ | 964/1057 [00:03<00:00, 294.95 examples/s]Map:  91%|█████████ | 963/1057 [00:03<00:00, 295.95 examples/s]Map:  94%|█████████▍| 994/1057 [00:03<00:00, 295.40 examples/s]Map:  94%|█████████▍| 993/1057 [00:03<00:00, 294.96 examples/s]Map:  98%|█████████▊| 1031/1057 [00:03<00:00, 167.94 examples/s]Map:  98%|█████████▊| 1032/1057 [00:03<00:00, 178.89 examples/s]Map: 100%|██████████| 1057/1057 [00:03<00:00, 167.95 examples/s]                                                                Map: 100%|██████████| 1057/1057 [00:03<00:00, 160.30 examples/s]                                                                wandb: Tracking run with wandb version 0.15.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+  0%|          | 0/26400 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 259, in <module>
+    fire.Fire(train)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 251, in train
+    trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 1664, in train
+    return inner_training_loop(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 1938, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 2735, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 2767, in compute_loss
+    outputs = model(**inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1040, in forward
+Traceback (most recent call last):
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1000, in _run_ddp_forward
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 259, in <module>
+    fire.Fire(train)
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 251, in train
+    trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+    return forward_call(*input, **kwargs)  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 1664, in train
+    return inner_training_loop(
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/peft/peft_model.py", line 678, in forward
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 1938, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 2735, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 2767, in compute_loss
+    outputs = model(**inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+    return self.base_model(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1040, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1000, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/peft/peft_model.py", line 678, in forward
+    return self.base_model(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 688, in forward
+    outputs = self.model(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 688, in forward
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 578, in forward
+    layer_outputs = decoder_layer(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+    outputs = self.model(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 293, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 232, in forward
+    attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query_states.dtype)
+    torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 100.00 MiB (GPU 0; 39.41 GiB total capacity; 37.45 GiB already allocated; 58.56 MiB free; 38.14 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 578, in forward
+    layer_outputs = decoder_layer(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+wandb: Waiting for W&B process to finish... (failed 1).
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 259, in <module>
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 293, in forward
+        fire.Fire(train)hidden_states, self_attn_weights, present_key_value = self.self_attn(
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/fire/core.py", line 141, in Fire
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/fire/core.py", line 466, in _Fire
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 232, in forward
+    attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query_states.dtype)
+torch.cuda    .component = fn(*varargs, **kwargs)OutOfMemoryError
+:   File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 251, in train
+CUDA out of memory. Tried to allocate 100.00 MiB (GPU 2; 39.41 GiB total capacity; 37.45 GiB already allocated; 58.56 MiB free; 38.14 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+    trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 1664, in train
+    return inner_training_loop(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 1938, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 2735, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 2767, in compute_loss
+    outputs = model(**inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1040, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1000, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/peft/peft_model.py", line 678, in forward
+    return self.base_model(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 688, in forward
+    outputs = self.model(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 578, in forward
+    layer_outputs = decoder_layer(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 293, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 232, in forward
+    attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query_states.dtype)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 100.00 MiB (GPU 1; 39.41 GiB total capacity; 37.45 GiB already allocated; 58.56 MiB free; 38.14 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 259, in <module>
+    fire.Fire(train)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 251, in train
+    trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 1664, in train
+    return inner_training_loop(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 1938, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 2735, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/trainer.py", line 2767, in compute_loss
+    outputs = model(**inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1040, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1000, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/peft/peft_model.py", line 678, in forward
+    return self.base_model(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 688, in forward
+    outputs = self.model(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 578, in forward
+    layer_outputs = decoder_layer(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 293, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 232, in forward
+    attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query_states.dtype)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 100.00 MiB (GPU 3; 39.41 GiB total capacity; 37.45 GiB already allocated; 58.56 MiB free; 38.14 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/bingxing2/home/scx6503/yx/LaWGPT/wandb/offline-run-20230712_202833-mgkp58my
+wandb: Find logs at: ./wandb/offline-run-20230712_202833-mgkp58my/logs
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 3901711 closing signal SIGTERM
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 1 (pid: 3901712) of binary: /home/bingxing2/home/scx6503/.conda/envs/llama_etuning/bin/python
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/distributed/run.py", line 762, in main
+    run(args)
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/distributed/run.py", line 753, in run
+    elastic_launch(
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/bingxing2/home/scx6503/.conda/envs/llama_etuning/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 246, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_clm.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2023-07-12_20:28:43
+  host      : paraai-n32-h-01-agent-48.paraai-n32-h-01.com
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3901713)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2023-07-12_20:28:43
+  host      : paraai-n32-h-01-agent-48.paraai-n32-h-01.com
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3901714)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-07-12_20:28:43
+  host      : paraai-n32-h-01-agent-48.paraai-n32-h-01.com
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3901712)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

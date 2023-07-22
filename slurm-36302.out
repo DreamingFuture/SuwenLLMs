@@ -1,0 +1,83 @@
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/home/scx6503/.conda/envs/py39 did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/home/bingxing2/apps/cuda/11.6.0/libnvvp'), PosixPath('/home/bingxing2/apps/cuda/11.6.0/libnsight')}
+  warn(msg)
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please submit your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+CUDA SETUP: CUDA runtime path found: /home/bingxing2/apps/cuda/11.6.0/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+CUDA SETUP: Detected CUDA version 116
+CUDA SETUP: Loading binary /home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda116.so...
+Training Alpaca-LoRA model with params:
+base_model: /home/bingxing2/home/scx6503/yx/Linly-Chinese-LLaMA-7B
+data_path: /home/bingxing2/home/scx6503/yx/LaWGPT/data/Sample.json
+output_dir: ./outputs/train-clm-llama-7B-2
+batch_size: 32
+micro_batch_size: 2
+num_epochs: 800
+learning_rate: 0.0003
+cutoff_len: 500
+val_set_size: 0
+lora_r: 8
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules: ['q_proj', 'v_proj', 'k_proj', 'o_proj']
+train_on_inputs: True
+add_eos_token: True
+group_by_length: True
+wandb_project: 
+wandb_run_name: 
+wandb_watch: 
+wandb_log_model: 
+resume_from_checkpoint: False
+prompt template: alpaca
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.09s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.59s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.82s/it]
+Found cached dataset json (/home/bingxing2/home/scx6503/.cache/huggingface/datasets/json/default-889e96a2ecc785f2/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4)
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 643.40it/s]
+trainable params: 8388608 || all params: 6746804224 || trainable%: 0.12433454005023165
+Map:   0%|          | 0/1057 [00:00<?, ? examples/s]Map:   4%|▎         | 37/1057 [00:00<00:02, 362.60 examples/s]Map:   7%|▋         | 76/1057 [00:00<00:02, 374.53 examples/s]Map:  11%|█         | 116/1057 [00:00<00:02, 383.02 examples/s]Map:  15%|█▍        | 155/1057 [00:00<00:02, 382.04 examples/s]Map:  20%|██        | 212/1057 [00:00<00:02, 378.20 examples/s]Map:  24%|██▎       | 250/1057 [00:00<00:02, 375.82 examples/s]Map:  27%|██▋       | 289/1057 [00:00<00:02, 376.52 examples/s]Map:  31%|███       | 328/1057 [00:00<00:01, 377.07 examples/s]Map:  35%|███▍      | 367/1057 [00:00<00:01, 377.45 examples/s]Map:  38%|███▊      | 406/1057 [00:01<00:01, 375.84 examples/s]Map:  42%|████▏     | 446/1057 [00:01<00:01, 377.24 examples/s]Map:  46%|████▌     | 485/1057 [00:01<00:01, 376.42 examples/s]Map:  49%|████▉     | 523/1057 [00:01<00:01, 374.45 examples/s]Map:  55%|█████▍    | 579/1057 [00:01<00:01, 369.10 examples/s]Map:  58%|█████▊    | 617/1057 [00:01<00:01, 369.52 examples/s]Map:  62%|██████▏   | 656/1057 [00:01<00:01, 370.88 examples/s]Map:  66%|██████▌   | 694/1057 [00:01<00:00, 370.05 examples/s]Map:  69%|██████▉   | 733/1057 [00:01<00:00, 372.89 examples/s]Map:  74%|███████▍  | 787/1057 [00:02<00:00, 364.29 examples/s]Map:  78%|███████▊  | 825/1057 [00:02<00:00, 366.07 examples/s]Map:  82%|████████▏ | 863/1057 [00:02<00:00, 368.66 examples/s]Map:  85%|████████▌ | 901/1057 [00:02<00:00, 367.96 examples/s]Map:  89%|████████▉ | 939/1057 [00:02<00:00, 368.52 examples/s]Map:  92%|█████████▏| 977/1057 [00:02<00:00, 369.23 examples/s]Map:  96%|█████████▋| 1020/1057 [00:02<00:00, 270.59 examples/s]Map: 100%|██████████| 1057/1057 [00:03<00:00, 235.06 examples/s]                                                                wandb: Tracking run with wandb version 0.15.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+  0%|          | 0/26400 [00:00<?, ?it/s]/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/autograd/_functions.py:299: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 260, in <module>
+    fire.Fire(train)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 252, in train
+    trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/trainer.py", line 1664, in train
+    return inner_training_loop(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/trainer.py", line 1940, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/trainer.py", line 2745, in training_step
+    self.scaler.scale(loss).backward()
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/autograd/function.py", line 267, in apply
+    return user_fn(self, *args)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/utils/checkpoint.py", line 157, in backward
+    torch.autograd.backward(outputs_with_grad, args_with_grad)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/autograd/function.py", line 267, in apply
+    return user_fn(self, *args)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/autograd/_functions.py", line 457, in backward
+    grad_A = torch.matmul(grad_output, CB).view(ctx.grad_shape).to(ctx.dtype_A)
+RuntimeError: expected scalar type Half but found Float
+wandb: Waiting for W&B process to finish... (failed 1).
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/bingxing2/home/scx6503/yx/LaWGPT/wandb/offline-run-20230712_192746-0ef9wa80
+wandb: Find logs at: ./wandb/offline-run-20230712_192746-0ef9wa80/logs

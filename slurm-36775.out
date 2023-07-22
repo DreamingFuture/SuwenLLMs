@@ -1,0 +1,87 @@
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/anaconda/2021.11 did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib:/home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib:/home/bingxing2/apps/compilers/gcc/12.2.0/libexec did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&as|compilers/default&as|compilers/latest&as|compilers/gcc/default&as|compilers/gcc/latest')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&compilers/gcc'), PosixPath('cudnn/8.6.0.163_cuda11.x&cudnn')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0'), PosixPath('cudnn/8.6.0.163_cuda11.x')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('module use --append /home/bingxing2/apps/tools/modules/modulefiles')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('() {  eval "$(/usr/bin/tclsh \'/home/bingxing2/apps/tools/modules/libexec/modulecmd.tcl\' bash "$@")";\n _mlstatus=$?;\n return $_mlstatus\n}')}
+  warn(msg)
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please submit your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching /usr/local/cuda/lib64...
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+CUDA SETUP: Detected CUDA version 116
+CUDA SETUP: Loading binary /home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda116.so...
+Training Alpaca-LoRA model with params:
+base_model: /home/bingxing2/home/scx6503/yx/chinese-alpaca-13b-merged
+data_path: /home/bingxing2/home/scx6503/yx/LaWGPT/data/train_info_and_repot.json
+output_dir: ./outputs/chinese-alpaca-13b-train_info_and_report
+batch_size: 48
+micro_batch_size: 1
+num_epochs: 1
+learning_rate: 0.0001
+cutoff_len: 512
+val_set_size: 0
+lora_r: 8
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules: ['q_proj', 'v_proj', 'k_proj', 'o_proj', 'gate_proj', 'down_proj', 'up_proj']
+train_on_inputs: True
+add_eos_token: True
+group_by_length: True
+wandb_project: 
+wandb_run_name: 
+wandb_watch: 
+wandb_log_model: 
+resume_from_checkpoint: False
+prompt template: alpaca
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/modeling_utils.py", line 454, in load_state_dict
+    return torch.load(checkpoint_file, map_location="cpu")
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/serialization.py", line 777, in load
+    with _open_zipfile_reader(opened_file) as opened_zipfile:
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/serialization.py", line 282, in __init__
+    super(_open_zipfile_reader, self).__init__(torch._C.PyTorchFileReader(name_or_buffer))
+RuntimeError: PytorchStreamReader failed reading zip archive: failed finding central directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/modeling_utils.py", line 458, in load_state_dict
+    if f.read(7) == "version":
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 128: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 259, in <module>
+    fire.Fire(train)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 108, in train
+    model = LlamaForCausalLM.from_pretrained(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/modeling_utils.py", line 2785, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/modeling_utils.py", line 3112, in _load_pretrained_model
+    state_dict = load_state_dict(shard_file)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/modeling_utils.py", line 470, in load_state_dict
+    raise OSError(
+OSError: Unable to load weights from pytorch checkpoint file for '/home/bingxing2/home/scx6503/yx/chinese-alpaca-13b-merged/pytorch_model-00001-of-00003.bin' at '/home/bingxing2/home/scx6503/yx/chinese-alpaca-13b-merged/pytorch_model-00001-of-00003.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+/var/spool/slurmd/job36775/slurm_script: line 39: ß: command not found

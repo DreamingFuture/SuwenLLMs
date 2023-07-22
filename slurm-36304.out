@@ -1,0 +1,103 @@
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/home/scx6503/.conda/envs/py39 did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/home/bingxing2/apps/cuda/11.6.0/libnvvp'), PosixPath('/home/bingxing2/apps/cuda/11.6.0/libnsight')}
+  warn(msg)
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please submit your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+CUDA SETUP: CUDA runtime path found: /home/bingxing2/apps/cuda/11.6.0/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+CUDA SETUP: Detected CUDA version 116
+CUDA SETUP: Loading binary /home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda116.so...
+Training Alpaca-LoRA model with params:
+base_model: /home/bingxing2/home/scx6503/yx/Linly-Chinese-LLaMA-7B
+data_path: /home/bingxing2/home/scx6503/yx/LaWGPT/data/Sample.json
+output_dir: ./outputs/train-clm-llama-7B-2
+batch_size: 32
+micro_batch_size: 2
+num_epochs: 800
+learning_rate: 0.0003
+cutoff_len: 500
+val_set_size: 0
+lora_r: 8
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules: ['q_proj', 'v_proj', 'k_proj', 'o_proj']
+train_on_inputs: True
+add_eos_token: True
+group_by_length: True
+wandb_project: 
+wandb_run_name: 
+wandb_watch: 
+wandb_log_model: 
+resume_from_checkpoint: False
+prompt template: alpaca
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.42s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.53s/it]
+Found cached dataset json (/home/bingxing2/home/scx6503/.cache/huggingface/datasets/json/default-889e96a2ecc785f2/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4)
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 460.15it/s]
+trainable params: 8388608 || all params: 6746804224 || trainable%: 0.12433454005023165
+Map:   0%|          | 0/1057 [00:00<?, ? examples/s]Map:   4%|▎         | 38/1057 [00:00<00:02, 372.94 examples/s]Map:   7%|▋         | 78/1057 [00:00<00:02, 380.83 examples/s]Map:  11%|█         | 118/1057 [00:00<00:02, 383.16 examples/s]Map:  15%|█▍        | 157/1057 [00:00<00:02, 384.95 examples/s]Map:  19%|█▊        | 196/1057 [00:00<00:02, 385.15 examples/s]Map:  22%|██▏       | 235/1057 [00:00<00:02, 381.07 examples/s]Map:  28%|██▊       | 293/1057 [00:00<00:02, 378.69 examples/s]Map:  31%|███▏      | 331/1057 [00:00<00:01, 376.53 examples/s]Map:  35%|███▌      | 370/1057 [00:00<00:01, 376.05 examples/s]Map:  39%|███▊      | 408/1057 [00:01<00:01, 375.84 examples/s]Map:  42%|████▏     | 447/1057 [00:01<00:01, 376.02 examples/s]Map:  46%|████▌     | 485/1057 [00:01<00:01, 372.82 examples/s]Map:  50%|████▉     | 524/1057 [00:01<00:01, 374.11 examples/s]Map:  53%|█████▎    | 563/1057 [00:01<00:01, 374.70 examples/s]Map:  57%|█████▋    | 601/1057 [00:01<00:01, 373.74 examples/s]Map:  61%|██████    | 640/1057 [00:01<00:01, 375.27 examples/s]Map:  64%|██████▍   | 678/1057 [00:01<00:01, 374.75 examples/s]Map:  68%|██████▊   | 717/1057 [00:01<00:00, 376.40 examples/s]Map:  73%|███████▎  | 773/1057 [00:02<00:00, 372.74 examples/s]Map:  78%|███████▊  | 827/1057 [00:02<00:00, 366.03 examples/s]Map:  82%|████████▏ | 865/1057 [00:02<00:00, 367.43 examples/s]Map:  85%|████████▌ | 902/1057 [00:02<00:00, 366.55 examples/s]Map:  89%|████████▉ | 939/1057 [00:02<00:00, 365.51 examples/s]Map:  92%|█████████▏| 977/1057 [00:02<00:00, 366.67 examples/s]Map:  96%|█████████▋| 1020/1057 [00:02<00:00, 270.44 examples/s]Map: 100%|██████████| 1057/1057 [00:03<00:00, 247.13 examples/s]                                                                wandb: Tracking run with wandb version 0.15.3
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+  0%|          | 0/26400 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 260, in <module>
+    fire.Fire(train)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 252, in train
+    trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/trainer.py", line 1664, in train
+    return inner_training_loop(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/trainer.py", line 1940, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/trainer.py", line 2735, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/trainer.py", line 2767, in compute_loss
+    outputs = model(**inputs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/peft/peft_model.py", line 678, in forward
+    return self.base_model(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 688, in forward
+    outputs = self.model(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 578, in forward
+    layer_outputs = decoder_layer(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 306, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 158, in forward
+    return self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 86.00 MiB (GPU 0; 39.41 GiB total capacity; 37.81 GiB already allocated; 82.50 MiB free; 38.12 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+wandb: Waiting for W&B process to finish... (failed 1).
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/bingxing2/home/scx6503/yx/LaWGPT/wandb/offline-run-20230712_192856-ek1osubm
+wandb: Find logs at: ./wandb/offline-run-20230712_192856-ek1osubm/logs

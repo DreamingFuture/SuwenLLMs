@@ -1,0 +1,140 @@
+
+===================================BUG REPORT===================================
+
+Welcome to bitsandbytes. For bug reports, please submit your error trace to: https://github.com/TimDettmers/bitsandbytes/issues===================================BUG REPORT===================================
+
+================================================================================Welcome to bitsandbytes. For bug reports, please submit your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+
+================================================================================
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/home/scx6503/.conda/envs/py39 did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/home/scx6503/.conda/envs/py39 did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/home/bingxing2/apps/cuda/11.6.0/libnsight'), PosixPath('/home/bingxing2/apps/cuda/11.6.0/libnvvp')}
+  warn(msg)
+CUDA SETUP: CUDA runtime path found: /home/bingxing2/apps/cuda/11.6.0/lib64/libcudart.souda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/home/bingxing2/apps/cuda/11.6.0/libnvvp'), PosixPath('/home/bingxing2/apps/cuda/11.6.0/libnsight')}
+  warn(msg)
+
+CUDA SETUP: CUDA runtime path found: /home/bingxing2/apps/cuda/11.6.0/lib64/libcudart.soCUDA SETUP: Highest compute capability among GPUs detected: 8.0
+
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0CUDA SETUP: Detected CUDA version 116
+
+CUDA SETUP: Detected CUDA version 116CUDA SETUP: Loading binary /home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda116.so...
+
+CUDA SETUP: Loading binary /home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda116.so...
+Training Alpaca-LoRA model with params:
+base_model: /home/bingxing2/home/scx6503/yx/Linly-Chinese-LLaMA-7B
+data_path: /home/bingxing2/home/scx6503/yx/LaWGPT/data/Sample.json
+output_dir: ./outputs/train-clm-llama-7B-2
+batch_size: 32
+micro_batch_size: 2
+num_epochs: 800
+learning_rate: 0.0003
+cutoff_len: 500
+val_set_size: 0
+lora_r: 8
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules: ['q_proj', 'v_proj', 'k_proj', 'o_proj']
+train_on_inputs: True
+add_eos_token: True
+group_by_length: True
+wandb_project: 
+wandb_run_name: 
+wandb_watch: 
+wandb_log_model: 
+resume_from_checkpoint: False
+prompt template: alpaca
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.52s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.02s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.26s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.60s/it]
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.39s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.78s/it]
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+Found cached dataset json (/home/bingxing2/home/scx6503/.cache/huggingface/datasets/json/default-889e96a2ecc785f2/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 93.78it/s]
+trainable params: 8388608 || all params: 6746804224 || trainable%: 0.12433454005023165
+Map:   0%|          | 0/1057 [00:00<?, ? examples/s]Found cached dataset json (/home/bingxing2/home/scx6503/.cache/huggingface/datasets/json/default-889e96a2ecc785f2/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 710.66it/s]
+trainable params: 8388608 || all params: 6746804224 || trainable%: 0.12433454005023165
+Map:   0%|          | 0/1057 [00:00<?, ? examples/s]Map:   4%|▎         | 39/1057 [00:00<00:02, 377.55 examples/s]Map:   4%|▎         | 38/1057 [00:00<00:02, 368.38 examples/s]Map:   7%|▋         | 79/1057 [00:00<00:02, 381.71 examples/s]Map:   7%|▋         | 79/1057 [00:00<00:02, 384.28 examples/s]Map:  11%|█         | 118/1057 [00:00<00:02, 380.89 examples/s]Map:  11%|█         | 118/1057 [00:00<00:02, 382.72 examples/s]Map:  15%|█▍        | 158/1057 [00:00<00:02, 384.78 examples/s]Map:  15%|█▍        | 157/1057 [00:00<00:02, 383.35 examples/s]Map:  19%|█▊        | 198/1057 [00:00<00:02, 385.69 examples/s]Map:  19%|█▊        | 196/1057 [00:00<00:02, 382.75 examples/s]Map:  24%|██▍       | 256/1057 [00:00<00:02, 383.64 examples/s]Map:  24%|██▎       | 251/1057 [00:00<00:02, 374.23 examples/s]Map:  28%|██▊       | 295/1057 [00:00<00:01, 381.72 examples/s]Map:  29%|██▉       | 307/1057 [00:00<00:02, 371.02 examples/s]Map:  32%|███▏      | 334/1057 [00:00<00:01, 381.93 examples/s]Map:  33%|███▎      | 345/1057 [00:00<00:01, 372.23 examples/s]Map:  37%|███▋      | 391/1057 [00:01<00:01, 379.77 examples/s]Map:  36%|███▋      | 384/1057 [00:01<00:01, 370.69 examples/s]Map:  41%|████      | 430/1057 [00:01<00:01, 380.48 examples/s]Map:  40%|███▉      | 422/1057 [00:01<00:01, 371.03 examples/s]Map:  44%|████▍     | 470/1057 [00:01<00:01, 379.92 examples/s]Map:  44%|████▎     | 460/1057 [00:01<00:01, 371.16 examples/s]Map:  47%|████▋     | 498/1057 [00:01<00:01, 371.90 examples/s]Map:  50%|████▉     | 527/1057 [00:01<00:01, 376.81 examples/s]Map:  54%|█████▎    | 567/1057 [00:01<00:01, 379.48 examples/s]Map:  52%|█████▏    | 554/1057 [00:01<00:01, 370.29 examples/s]Map:  56%|█████▌    | 593/1057 [00:01<00:01, 372.08 examples/s]Map:  59%|█████▉    | 624/1057 [00:01<00:01, 376.46 examples/s]Map:  60%|█████▉    | 632/1057 [00:01<00:01, 373.23 examples/s]Map:  63%|██████▎   | 662/1057 [00:01<00:01, 374.91 examples/s]Map:  66%|██████▌   | 700/1057 [00:01<00:00, 373.91 examples/s]Map:  65%|██████▍   | 686/1057 [00:01<00:01, 366.07 examples/s]Map:  70%|██████▉   | 738/1057 [00:01<00:00, 372.71 examples/s]Map:  68%|██████▊   | 724/1057 [00:01<00:00, 368.40 examples/s]Map:  72%|███████▏  | 762/1057 [00:02<00:00, 370.19 examples/s]Map:  75%|███████▍  | 792/1057 [00:02<00:00, 365.36 examples/s]Map:  78%|███████▊  | 829/1057 [00:02<00:00, 363.75 examples/s]Map:  77%|███████▋  | 816/1057 [00:02<00:00, 361.32 examples/s]Map:  82%|████████▏ | 867/1057 [00:02<00:00, 364.36 examples/s]Map:  81%|████████  | 853/1057 [00:02<00:00, 363.01 examples/s]Map:  86%|████████▌ | 905/1057 [00:02<00:00, 365.17 examples/s]Map:  84%|████████▍ | 890/1057 [00:02<00:00, 363.22 examples/s]Map:  89%|████████▉ | 942/1057 [00:02<00:00, 362.52 examples/s]Map:  88%|████████▊ | 927/1057 [00:02<00:00, 361.95 examples/s]Map:  91%|█████████ | 964/1057 [00:02<00:00, 362.02 examples/s]Map:  94%|█████████▍| 997/1057 [00:02<00:00, 361.90 examples/s]Map:  96%|█████████▋| 1020/1057 [00:02<00:00, 276.63 examples/s]Map:  98%|█████████▊| 1040/1057 [00:02<00:00, 265.24 examples/s]Map: 100%|██████████| 1057/1057 [00:03<00:00, 272.04 examples/s]                                                                                                                                Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 259, in <module>
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 259, in <module>
+        fire.Fire(train)fire.Fire(train)
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 141, in Fire
+        component_trace = _Fire(component, args, parsed_flag_args, context, name)component_trace = _Fire(component, args, parsed_flag_args, context, name)
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 466, in _Fire
+        component, remaining_args = _CallAndUpdateTrace(component, remaining_args = _CallAndUpdateTrace(
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)    
+component = fn(*varargs, **kwargs)  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 214, in train
+
+  File "/home/bingxing2/home/scx6503/yx/LaWGPT/train_clm.py", line 214, in train
+        args=transformers.TrainingArguments(args=transformers.TrainingArguments(
+
+  File "<string>", line 111, in __init__
+  File "<string>", line 111, in __init__
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/training_args.py", line 1333, in __post_init__
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/training_args.py", line 1333, in __post_init__
+        and (self.device.type != "cuda")and (self.device.type != "cuda")
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/training_args.py", line 1697, in device
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/training_args.py", line 1697, in device
+        return self._setup_devicesreturn self._setup_devices
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/utils/generic.py", line 54, in __get__
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/utils/generic.py", line 54, in __get__
+        cached = self.fget(obj)cached = self.fget(obj)
+
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/training_args.py", line 1631, in _setup_devices
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/transformers/training_args.py", line 1631, in _setup_devices
+    self.distributed_state = PartialState(backend=self.ddp_backend)
+      File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/accelerate/state.py", line 128, in __init__
+self.distributed_state = PartialState(backend=self.ddp_backend)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/accelerate/state.py", line 128, in __init__
+        torch.distributed.init_process_group(backend="nccl", **kwargs)torch.distributed.init_process_group(backend="nccl", **kwargs)
+
+TypeErrorTypeError: : torch.distributed.distributed_c10d.init_process_group() got multiple values for keyword argument 'backend'torch.distributed.distributed_c10d.init_process_group() got multiple values for keyword argument 'backend'
+
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 14250) of binary: /home/bingxing2/home/scx6503/.conda/envs/py39/bin/python
+Traceback (most recent call last):
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/distributed/run.py", line 762, in main
+    run(args)
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/distributed/run.py", line 753, in run
+    elastic_launch(
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 246, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_clm.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2023-07-12_20:15:48
+  host      : paraai-n32-h-01-agent-44.paraai-n32-h-01.com
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 14254)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-07-12_20:15:48
+  host      : paraai-n32-h-01-agent-44.paraai-n32-h-01.com
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 14250)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

@@ -1,0 +1,85 @@
+
+===================================BUG REPORT===================================
+
+Welcome to bitsandbytes. For bug reports, please submit your error trace to: https://github.com/TimDettmers/bitsandbytes/issues===================================BUG REPORT===================================
+
+================================================================================Welcome to bitsandbytes. For bug reports, please submit your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+
+================================================================================
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/anaconda/2021.11 did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/anaconda/2021.11 did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib:/home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib:/home/bingxing2/apps/compilers/gcc/12.2.0/libexec did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: /home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib:/home/bingxing2/apps/cudnn/8.6.0.163_cuda11.x/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib64:/home/bingxing2/apps/compilers/gcc/12.2.0/lib:/home/bingxing2/apps/compilers/gcc/12.2.0/libexec did not contain libcudart.so as expected! Searching further paths...
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&as|compilers/default&as|compilers/latest&as|compilers/gcc/default&as|compilers/gcc/latest')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&as|compilers/default&as|compilers/latest&as|compilers/gcc/default&as|compilers/gcc/latest')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('cudnn/8.6.0.163_cuda11.x&cudnn'), PosixPath('compilers/gcc/12.2.0&compilers/gcc')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0&compilers/gcc'), PosixPath('cudnn/8.6.0.163_cuda11.x&cudnn')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('compilers/gcc/12.2.0'), PosixPath('cudnn/8.6.0.163_cuda11.x')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('cudnn/8.6.0.163_cuda11.x'), PosixPath('compilers/gcc/12.2.0')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('module use --append /home/bingxing2/apps/tools/modules/modulefiles')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('module use --append /home/bingxing2/apps/tools/modules/modulefiles')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('() {  eval "$(/usr/bin/tclsh \'/home/bingxing2/apps/tools/modules/libexec/modulecmd.tcl\' bash "$@")";\n _mlstatus=$?;\n return $_mlstatus\n}')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('() {  eval "$(/usr/bin/tclsh \'/home/bingxing2/apps/tools/modules/libexec/modulecmd.tcl\' bash "$@")";\n _mlstatus=$?;\n return $_mlstatus\n}')}
+  warn(msg)
+/home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/torchelastic_alu0n5n0/none_idq99fj0/attempt_0/1/error.json')}
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching /usr/local/cuda/lib64...:136: UserWarning: WARNING: The following directories listed in your path were found to be non-existent: {PosixPath('/tmp/torchelastic_alu0n5n0/none_idq99fj0/attempt_0/0/error.json')}
+  warn(msg)
+CUDA_SETUP: WARNING! libcudart.so not found in any environmental path. Searching /usr/local/cuda/lib64...
+
+CUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.soCUDA SETUP: CUDA runtime path found: /usr/local/cuda/lib64/libcudart.so
+
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+
+CUDA SETUP: Detected CUDA version 116CUDA SETUP: Detected CUDA version 116
+
+CUDA SETUP: Loading binary /home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda116.so...CUDA SETUP: Loading binary /home/bingxing2/home/scx6503/.conda/envs/py39/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda116.so...
+
+Training Alpaca-LoRA model with params:
+base_model: /home/bingxing2/home/scx6503/yx/chinese-llama-plus-7b
+data_path: /home/bingxing2/home/scx6503/yx/LaWGPT/data/train_info_and_repot.json
+output_dir: ./outputs/chinese-llama-plus-7b-train_info_and_report
+batch_size: 64
+micro_batch_size: 2
+num_epochs: 2
+learning_rate: 0.0001
+cutoff_len: 600
+val_set_size: 0
+lora_r: 8
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules: ['q_proj', 'v_proj', 'k_proj', 'o_proj', 'gate_proj', 'down_proj', 'up_proj']
+train_on_inputs: True
+add_eos_token: True
+group_by_length: True
+wandb_project: 
+wandb_run_name: 
+wandb_watch: 
+wandb_log_model: 
+resume_from_checkpoint: False
+prompt template: alpaca
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.55s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.66s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.46s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.79s/it]
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.56s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.85s/it]
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+Found cached dataset json (/home/bingxing2/home/scx6503/.cache/huggingface/datasets/json/default-c4f757f5f0956f39/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4)
+  0%|          | 0/1 [00:00<?, ?it/s]Found cached dataset json (/home/bingxing2/home/scx6503/.cache/huggingface/datasets/json/default-c4f757f5f0956f39/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 54.52it/s]100%|██████████| 1/1 [00:00<00:00, 14.46it/s]
+
+trainable params: 19988480 || all params: 6905475072 || trainable%: 0.289458433946831trainable params: 19988480 || all params: 6905475072 || trainable%: 0.289458433946831
+
+Map:   0%|          | 0/98221 [00:00<?, ? examples/s]Map:   0%|          | 0/98221 [00:00<?, ? examples/s]Map:   0%|          | 91/98221 [00:00<01:49, 894.36 examples/s]Map:   0%|          | 97/98221 [00:00<01:43, 945.98 examples/s]Map:   0%|          | 182/98221 [00:00<01:48, 900.73 examples/s]Map:   0%|          | 239/98221 [00:00<01:43, 943.58 examples/s]Map:   0%|          | 277/98221 [00:00<01:46, 917.90 examples/s]Map:   0%|          | 372/98221 [00:00<01:45, 926.46 examples/s]Map:   0%|          | 377/98221 [00:00<01:45, 926.96 examples/s]Map:   0%|          | 468/98221 [00:00<01:44, 935.39 examples/s]Map:   0%|          | 470/98221 [00:00<01:46, 920.50 examples/s]Map:   1%|          | 566/98221 [00:00<01:43, 947.33 examples/s]Map:   1%|          | 563/98221 [00:00<01:46, 920.53 examples/s]Map:   1%|          | 658/98221 [00:00<01:45, 928.40 examples/s]Map:   1%|          | 708/98221 [00:00<01:43, 943.56 examples/s]Map:   1%|          | 755/98221 [00:00<01:43, 939.71 examples/s]Map:   1%|          | 846/98221 [00:00<01:44, 930.71 examples/s]Map:   1%|          | 857/98221 [00:00<01:41, 958.64 examples/s]Map:   1%|          | 954/98221 [00:01<01:41, 958.74 examples/s]Map:   1%|          | 985/98221 [00:01<01:44, 926.44 examples/s]Map:   1%|          | 1052/98221 [00:01<02:07, 761.72 examples/s]Map:   1%|          | 1094/98221 [00:01<02:10, 742.48 examples/s]Map:   1%|          | 1154/98221 [00:01<01:57, 825.26 examples/s]Map:   1%|          | 1191/98221 [00:01<02:02, 789.30 examples/s]Map:   1%|▏         | 1257/98221 [00:01<01:50, 877.57 examples/s]Map:   1%|▏         | 1286/98221 [00:01<01:57, 825.47 examples/s]Map:   1%|▏         | 1361/98221 [00:01<01:45, 918.62 examples/s]Map:   1%|▏         | 1383/98221 [00:01<01:52, 859.57 examples/s]Map:   1%|▏         | 1460/98221 [00:01<01:43, 937.48 examples/s]Map:   2%|▏         | 1481/98221 [00:01<01:48, 887.60 examples/s]Map:   2%|▏         | 1560/98221 [00:01<01:41, 951.83 examples/s]Map:   2%|▏         | 1578/98221 [00:01<01:46, 906.64 examples/s]Map:   2%|▏         | 1708/98221 [00:01<01:40, 961.17 examples/s]Map:   2%|▏         | 1677/98221 [00:01<01:44, 927.50 examples/s]Map:   2%|▏         | 1807/98221 [00:01<01:39, 965.46 examples/s]Map:   2%|▏         | 1810/98221 [00:02<01:46, 909.11 examples/s]Map:   2%|▏         | 1947/98221 [00:02<01:41, 951.34 examples/s]Map:   2%|▏         | 1949/98221 [00:02<01:45, 911.72 examples/s]Map:   2%|▏         | 2051/98221 [00:02<01:58, 811.78 examples/s]Map:   2%|▏         | 2049/98221 [00:02<02:04, 772.94 examples/s]Map:   2%|▏         | 2154/98221 [00:02<01:51, 860.45 examples/s]Map:   2%|▏         | 2148/98221 [00:02<01:57, 820.37 examples/s]Map:   2%|▏         | 2257/98221 [00:02<01:46, 899.31 examples/s]Map:   2%|▏         | 2243/98221 [00:02<01:52, 851.17 examples/s]Map:   2%|▏         | 2361/98221 [00:02<01:42, 933.04 examples/s]Map:   2%|▏         | 2342/98221 [00:02<01:48, 885.74 examples/s]Map:   3%|▎         | 2462/98221 [00:02<01:40, 949.64 examples/s]Map:   2%|▏         | 2440/98221 [00:02<01:45, 909.23 examples/s]Map:   3%|▎         | 2561/98221 [00:02<01:40, 955.37 examples/s]Map:   3%|▎         | 2537/98221 [00:02<01:43, 922.85 examples/s]Map:   3%|▎         | 2662/98221 [00:02<01:38, 968.30 examples/s]Map:   3%|▎         | 2637/98221 [00:02<01:41, 942.36 examples/s]Map:   3%|▎         | 2807/98221 [00:03<01:39, 963.58 examples/s]slurmstepd: error: *** JOB 36790 ON paraai-n32-h-01-agent-3 CANCELLED AT 2023-07-13T20:32:54 ***

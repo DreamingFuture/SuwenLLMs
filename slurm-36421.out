@@ -1,0 +1,33 @@
+Training Alpaca-LoRA model with params:
+base_model: /home/bingxing2/home/scx6503/yx/Linly-Chinese-LLaMA-7B
+data_path: /home/bingxing2/home/scx6503/yx/LaWGPT/data/train.json
+output_dir: ./outputs/train-clm-llama-7B-full-bs512-e2
+batch_size: 512
+micro_batch_size: 2
+num_epochs: 2
+learning_rate: 0.0001
+cutoff_len: 600
+val_set_size: 0
+lora_r: 8
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules: ['q_proj', 'v_proj', 'k_proj', 'o_proj', 'gate_proj', 'down_proj', 'up_proj']
+train_on_inputs: True
+add_eos_token: True
+group_by_length: True
+wandb_project: 
+wandb_run_name: 
+wandb_watch: 
+wandb_log_model: 
+resume_from_checkpoint: False
+prompt template: alpaca
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.88s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.90s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.03s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.10s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.42s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.94s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.48s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  5.00s/it]
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.50s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.03s/it]
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.55s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.08s/it]
+pre-trained model's BOS EOS and PAD token id: 1 2 None  => It should be 1,2,none
+slurmstepd: error: *** JOB 36421 ON paraai-n32-h-01-agent-40 CANCELLED AT 2023-07-12T22:36:57 ***
