@@ -11,6 +11,8 @@ from utils.prompter import Prompter
 if torch.cuda.is_available():
     device = "cuda"
 
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '2,3,4,5'
 
 class Infer():
     def __init__(
@@ -36,8 +38,11 @@ class Infer():
                 lora_weights,
                 torch_dtype=torch.float16,
             )
-        except:
+        except Exception as e:
+            print(e)
             print("*"*50, "\n Attention! No Lora Weights \n", "*"*50)
+
+        print(type(model))
             
         # unwind broken decapoda-research config
         model.config.pad_token_id = tokenizer.pad_token_id = 0  # unk
@@ -113,6 +118,32 @@ def main(
     prompt_template: str = "law_template",  # The prompt template to use, will default to alpaca.
     infer_data_path: str = "./resources/example_infer_data.json",
 ):
+    
+    # chinese-alpaca-plus-7b-merged
+    # base_model = "/data2/yuxiang/data/LLMs/chinese-alpaca-plus-7b-merged"
+    # lora_weights = "./outputs/chinese-alpaca-plus-7b-merged-train_info_and_report"
+
+    # chinese-alpaca-plus-13b-hf
+    # base_model = "/data2/yuxiang/data/LLMs/chinese-alpaca-plus-13b-hf"
+    # lora_weights = "./outputs/chinese-alpaca-plus-13b-train_info_and_report_news15w-singlegpu"
+
+    # chinese-llama-plus-7b ? huggingface只有merged
+    # base_model = "/data2/yuxiang/data/LLMs/chinese-llama-plus-7b-merged"
+    # lora_weights = "./outputs/chinese-llama-plus-7b-train_info_and_report"
+
+    # chinese-llama-plus-13b-hf
+    # base_model = "/data2/yuxiang/data/LLMs/chinese-llama-plus-13b-hf"
+    # lora_weights = "./outputs/chinese-llama-plus-13b-hf-info_and_news15w"
+    # lora_weights = "./outputs/true-chinese-llama-plus-13b-hf-info_and_report"
+
+    # Linly-Chinese-LLaMA-7b-hf
+    base_model = "/data2/yuxiang/data/LLMs/Linly-Chinese-LLaMA-7b-hf"
+    # lora_weights = "./outputs/Linly-Chinese-LLaMA-7B-info_and_report"
+    lora_weights = "./outputs/train-clm-llama-7B-full"
+    # lora_weights = "./outputs/train-clm-llama-7B-full-bs256"
+    # lora_weights = "./outputs/train-clm-llama-7B-linly_ai-train_info_and_report"
+    # lora_weights = "./outputs/train-clm-llama-7B-news_info"
+    
     infer = Infer(
         load_8bit=load_8bit,
         base_model=base_model,
